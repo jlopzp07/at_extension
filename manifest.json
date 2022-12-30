@@ -1,0 +1,27 @@
+{
+    "name": "Alegra Tienda Extension",
+    "version": "0.0.1",
+    "description": "Test",
+    "manifest_version": 3,
+    "author": "Juan López",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Alegra tienda"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "script.js"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "alegra-tienda-logo.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
