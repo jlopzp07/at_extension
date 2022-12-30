@@ -125,14 +125,18 @@ i {
 }
 
 .orders {
-    padding: 16px;
-    border: 1px solid #CBD5E1;
+    max-height: 0;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-
+    overflow: hidden;
+    transition: max-height 0.2s linear;
+    -webkit-transition: max-height 0.2s linear;
+    -moz-transition: max-height 0.2s linear;
+    -ms-transition: max-height 0.2s linear;
+    -o-transition: max-height 0.2s linear;
 }
 
 .order-item {
@@ -181,4 +185,10 @@ i {
 .order-content h3 {
     font-size: 1.6rem;
     font-weight: 700;
+}
+
+.active {
+    max-height: 350px;
+    padding: 16px;
+    border: 1px solid #CBD5E1;
 }
